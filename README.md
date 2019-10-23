@@ -6,7 +6,7 @@
 This repo takes a Flask web app (containing a machine learning model), and provides functionality to build a docker container, deploy it to DockerHub and run it locally on Kubernetes.
 The machine learning model is trained on the famous Boston housing dataset, which can be [here](https://www.kaggle.com/c/boston-housing) on Kaggle.
 
-##Setup
+## Setup
 
 After cloning this repo and navigating to the root directory, below are the instructions for building and deploying the model:
 
@@ -29,7 +29,7 @@ To make a prediction:
 * Change the parameters in ```make_prediction.sh``` to desired inputs
 * Run ```make_predictions.sh```
 
-##Files
+## Files
 * ```app.py``` - main Flask app
 * ```Dockerfile``` - used to build the docker image
 * ```make_prediction.sh``` - bash file to make predictions on running model
