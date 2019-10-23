@@ -1,0 +1,14 @@
+Output from prediction:
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
+
+Pod name and status:
+NAME                              READY   STATUS    RESTARTS   AGE
+boston-housing-679d79c489-b798n   1/1     Running   0          52m
+
+Port forwarding and handling command when creating service:
+kubectl expose deployments/boston-housing --type="NodePort" --port 8000 --target-port 80
